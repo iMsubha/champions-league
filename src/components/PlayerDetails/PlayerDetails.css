@@ -1,0 +1,17 @@
+.player-details {
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 235px;
+  border-radius: 15px;
+}
+.player-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid blueviolet;
+}
+.main-button {
+  width: 50%;
+  background-color: blueviolet;
+}
