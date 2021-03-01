@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './PlayerDetails.css'
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 const PlayerDetails = (props) => {
     // console.log(props);
     const { full_name, image, salary, team_name, nationality } = props.player;
@@ -17,7 +19,9 @@ const PlayerDetails = (props) => {
                 <p className="font-weight-lighter mb-0">{nationality}</p>
                 <p className="font-weight-lighter">Salary: ${salary}</p>
             </div>
-            <Button onClick={() => handleAddPlayer(props.player)} className="main-button mb-3">ADD ME</Button>
+            <Button onClick={() => handleAddPlayer(props.player)} className="main-button mb-3">
+                <FontAwesomeIcon className="mr-1" icon={faPlusCircle} />
+            ADD ME</Button>
         </div>
     );
 };
