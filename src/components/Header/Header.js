@@ -1,10 +1,13 @@
 import React from 'react';
-
+import './Header.css'
 const Header = () => {
     return (
-        <div>
+        <div className="header">
             <h1>Champions League</h1>
-            <p>Club header / navbar/ logo</p>
+            <nav>
+                <a href="./">Player List</a>
+                <a href="./club">Club</a>
+            </nav>
         </div>
     );
 };

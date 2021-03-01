@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Member from '../Member/Member';
+import './Club.css'
 const Club = (props) => {
     //console.log(props.club);
     const members = props.club;
@@ -7,10 +8,13 @@ const Club = (props) => {
     //const [full_name] = props.club;
 
     return (
-        <div>
-            <h1>This is club</h1>
-            <p>Total added Member: {members.length}</p>
-            <p>{totalBudget}</p>
+        <div className="ml-5 pt-2">
+            <h1 className="club">ARSENAL</h1>
+            <p>Total team members: {members.length}</p>
+            {
+                members.map(member => <Member member={member} />)
+            }
+            <h4>Total Budget: ${totalBudget}</h4>
         </div>
     );
 };

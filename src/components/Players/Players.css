@@ -1,6 +1,7 @@
 .players {
   display: flex;
-  margin: 10px;
+  margin: 15px;
+  margin-left: 50px;
 }
 .players-container {
   width: 70%;

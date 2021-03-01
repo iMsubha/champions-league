@@ -5,14 +5,13 @@ import PlayerDetails from '../PlayerDetails/PlayerDetails';
 import './Players.css'
 import Club from '../Club/Club';
 const Players = () => {
-    const first15 = playersData.slice(0, 15);
+    const first15 = playersData.slice(0, 20);
     const [players, setPlayer] = useState(first15); //15 data
     const [selectedPlayer, setSelectedPlayer] = useState([])
 
     const handleAddPlayer = (player) => {
         const newSelectedPlayer = [...selectedPlayer, player]
         setSelectedPlayer(newSelectedPlayer)
-        console.log("clicked", player);
     }
     useEffect(() => {
         setPlayer(players);
