@@ -5,7 +5,6 @@ import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 const PlayerDetails = (props) => {
-    // console.log(props);
     const { full_name, image, salary, team_name, nationality } = props.player;
     const handleAddPlayer = props.handleAddPlayer;
     return (
